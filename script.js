@@ -1,11 +1,3 @@
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
-
 (() => {
   var u = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports);
   var ms = u(() => {
@@ -1712,7 +1704,7 @@ __p+='`),
           r = document,
           n = e("html"),
           i = e("body"),
-          o = ".w-webflow-badge",
+          
           a = window.location,
           s = /PhantomJS/i.test(navigator.userAgent),
           c =
@@ -1738,26 +1730,7 @@ __p+='`),
             !!r.webkitFullscreenElement;
           e(f).attr("style", y ? "display: none !important;" : "");
         }
-        function h() {
-          var y = e('<a class="w-webflow-badge"></a>').attr(
-              "href",
-              "https://webflow.com?utm_campaign=brandjs"
-            ),
-            A = e("<img>")
-              .attr(
-                "src",
-                "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
-              )
-              .attr("alt", "")
-              .css({ marginRight: "8px", width: "16px" }),
-            O = e("<img>")
-              .attr(
-                "src",
-                "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
-              )
-              .attr("alt", "Made in Webflow");
-          return y.append(A, O), y[0];
-        }
+        
         function _() {
           var y = i.children(o),
             A = y.length && y.get(0) === f,
